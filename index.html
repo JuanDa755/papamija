@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mala Alimentación</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav button {
+            background: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        section {
+            display: none;
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+        section.active {
+            display: block;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        h2 {
+            color: #333;
+        }
+        .note {
+            background: #f4f4f4;
+            padding: 10px;
+            margin-top: 10px;
+            border-left: 4px solid #ccc;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</head>
+<body onload="showSection('introduccion')">
+    <header>
+        <h1>Mala Alimentación</h1>
+    </header>
+    <nav>
+        <button onclick="showSection('introduccion')">Introducción</button>
+        <button onclick="showSection('causas')">Causas</button>
+        <button onclick="showSection('consecuencias')">Consecuencias</button>
+        <button onclick="showSection('prevencion')">Prevención</button>
+    </nav>
+    <div class="container">
+        <section id="introduccion">
+            <h2>Introducción a la Mala Alimentación</h2>
+            <img src="descarga1.jpg" alt="Introducción a la mala alimentación">
+            <p>La mala alimentación se refiere a una dieta desequilibrada o inadecuada que no proporciona los nutrientes necesarios para mantener una buena salud. Puede ser el resultado de una falta de acceso a alimentos saludables, hábitos alimenticios poco saludables o falta de educación nutricional.</p>
+        </section>
+        <section id="causas">
+            <h2>Causas de la Mala Alimentación</h2>
+            <img src="descarga2.jpg" alt="Causas de la mala alimentación">
+            <p>La mala alimentación puede ser causada por una variedad de factores, incluidos el acceso limitado a alimentos saludables, la falta de educación nutricional y los hábitos alimenticios poco saludables. Algunos factores específicos incluyen:</p>
+            <ul>
+                <li><strong>Acceso limitado a alimentos saludables:</strong> En muchas comunidades, especialmente en áreas rurales y urbanas de bajos ingresos, puede ser difícil encontrar alimentos frescos y nutritivos.</li>
+                <li><strong>Educación nutricional insuficiente:</strong> Muchas personas no reciben la educación adecuada sobre qué constituye una dieta equilibrada y saludable.</li>
+                <li><strong>Publicidad de alimentos poco saludables:</strong> La publicidad a menudo promueve alimentos ricos en azúcares, grasas y sal, lo que puede influir en las elecciones alimenticias de las personas.</li>
+            </ul>
+            <div class="note">
+                <strong>Nota:</strong> La falta de acceso a alimentos frescos y saludables en algunas comunidades es un problema creciente.
+            </div>
+        </section>
+        <section id="consecuencias">
+            <h2>Consecuencias de la Mala Alimentación</h2>
+            <img src="descarga3.jpg" alt="Consecuencias de la mala alimentación">
+            <p>Una dieta deficiente puede llevar a problemas de salud graves, como la obesidad, enfermedades del corazón, diabetes y deficiencias nutricionales. Algunas consecuencias específicas incluyen:</p>
+            <ul>
+                <li><strong>Obesidad:</strong> El consumo excesivo de calorías, grasas y azúcares puede llevar al aumento de peso y a la obesidad.</li>
+                <li><strong>Enfermedades del corazón:</strong> Una dieta rica en grasas saturadas y colesterol puede aumentar el riesgo de enfermedades cardiovasculares.</li>
+                <li><strong>Diabetes:</strong> El consumo excesivo de azúcares puede contribuir al desarrollo de diabetes tipo 2.</li>
+                <li><strong>Deficiencias nutricionales:</strong> La falta de vitaminas y minerales esenciales puede causar una variedad de problemas de salud, incluyendo anemia y debilidad del sistema inmunológico.</li>
+            </ul>
+            <div class="note">
+                <strong>Nota:</strong> La obesidad infantil es una de las principales consecuencias de una alimentación inadecuada en los niños.
+            </div>
+        </section>
+        <section id="prevencion">
+            <h2>Prevención de la Mala Alimentación</h2>
+            <img src="descarga4.jpg" alt="Prevención de la mala alimentación">
+            <p>Para prevenir la mala alimentación, es crucial fomentar hábitos alimenticios saludables desde una edad temprana, mejorar el acceso a alimentos nutritivos y promover la educación sobre nutrición. Algunas estrategias incluyen:</p>
+            <ul>
+                <li><strong>Educación nutricional:</strong> Incluir programas de educación nutricional en las escuelas y comunidades para enseñar a las personas sobre la importancia de una dieta equilibrada.</li>
+                <li><strong>Mejorar el acceso a alimentos saludables:</strong> Apoyar políticas que aumenten la disponibilidad de alimentos frescos y nutritivos en todas las comunidades.</li>
+                <li><strong>Promoción de hábitos saludables:</strong> Fomentar hábitos como comer frutas y verduras, limitar el consumo de alimentos procesados y beber agua en lugar de bebidas azucaradas.</li>
+            </ul>
+            <div class="note">
+                <strong>Nota:</strong> Programas de educación nutricional en las escuelas pueden ayudar a los niños a tomar decisiones alimenticias más saludables.
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+
